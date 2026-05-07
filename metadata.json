@@ -1,0 +1,7 @@
+{
+  "name": "Unified Resonance AGI Dashboard v1.6",
+  "description": "A high-fidelity interface for the post-transformer AGI paradigm, upgraded with the 24-Bit Axiom, Leech Lattice architecture, and Gnosis-driven recursive logic engines.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

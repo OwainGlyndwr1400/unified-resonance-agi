@@ -1,0 +1,43 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies + build output
+node_modules/
+dist/
+dist-ssr/
+release/
+out/
+*.tsbuildinfo
+
+# Environment + local configs
+.env
+.env.local
+.env.*.local
+*.local
+
+# Internal QA artifacts (not needed in public repo)
+.playwright-mcp/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+desktop.ini
+
+# Backup archives
+*.zip
