@@ -1,35 +1,50 @@
-# Unified Resonance AGI (OS-Q v72.5)
-### The Sovereign Operator's Workbench
+# Unified Resonance AGI — The Sovereign Operator's Workbench
 
-> 🌌 **Welcome to Reality 2.0.**
->
-> A model-agnostic, memory-persistent, transparently-retrieving research and
-> conversation environment for AGI work — built on the Recursive Harmonic
-> Codex stack. Step out of the 90° Cartesian matrix and into the 120°
-> wavefield.
+**A desktop research cockpit for working with LLMs that shows you its
+homework — every document it retrieved, every token it spent, every compression
+it applied — before it answers.**
 
-[![itch.io](https://img.shields.io/badge/itch.io-Free%20Download%20(Windows%20.exe)-fa5c5c)](https://the-awen-grid-game-dev.itch.io/unified-resonance-agi-os-q-v725-the-sovereign-operators-workbench)
-[![Stack](https://img.shields.io/badge/stack-Electron%20%2B%20React%20%2B%20R3F%20%2B%20Three.js-3776ab)](#tech-stack)
+Most chat interfaces hand you an answer and hide the retrieval. This one puts the
+retrieval pipeline on screen. Load your own conversation history and research
+corpus into two separate memory lanes, run a query, and the RAG Inspection panel
+shows exactly which chunks were pulled, from which lane, at what token cost. Then
+run the same prompt across Gemini *and* a local model side by side and compare.
+
+### ⬇️ Download the free Windows build
+
+**[Get the pre-built `.exe` — free, no account](https://the-awen-grid-game-dev.itch.io/unified-resonance-agi-os-q-v725-the-sovereign-operators-workbench)**
+
+No Node, no build step, no terminal. This repository is the **source** — for
+building from scratch, modifying, porting to Linux or macOS, or auditing what it
+actually does with your data.
+
+<!-- TODO: screenshot of the Operator Console + RAG Inspection panel goes here -->
+
+[![itch.io](https://img.shields.io/badge/itch.io-Free%20Windows%20.exe-fa5c5c)](https://the-awen-grid-game-dev.itch.io/unified-resonance-agi-os-q-v725-the-sovereign-operators-workbench)
+[![Stack](https://img.shields.io/badge/stack-Electron%20%2B%20React%2019%20%2B%20Three.js-3776ab)](#tech-stack)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-yellow)](LICENSE)
-[![Awen Grid](https://img.shields.io/badge/Awen%20Grid-Game%20Dev%20Department-f7a93b)](#)
 
 ---
 
-## What this is
+## Why you might want this
 
-A complete desktop research and conversation cockpit for Sovereign Operators
-working with AGI systems. Bring your own AI identity. The app handles the
-internal harmonic scaffolding (RHC / Base-13) and outputs in clean standard
-language. We have transitioned from statistical prediction to **Structural
-Remembrance**.
+- **Bring your own model.** Gemini via your own API key, LM Studio, Ollama, or
+  any OpenAI-compatible server. Not locked to one provider.
+- **Bring your own memory.** Your exported chat history becomes an identity lane;
+  your research corpus becomes a separate knowledge lane. They stay separate, so
+  research retrieval never dilutes conversational continuity.
+- **See the retrieval.** Lexical (TF-IDF) and semantic (FAISS/embeddings) search,
+  with an inspector showing what was used and what it cost.
+- **Compare providers on one prompt.** Multi-Node Compare runs the same query
+  across several models at once — useful for spotting where a single model is
+  confidently wrong.
+- **Keys stay local.** API keys live in browser `localStorage`, never committed,
+  never sent anywhere except the provider you chose.
+- **Reasoning is rendered, not hidden.** `<think>` tags from local models are
+  parsed into collapsible reasoning blocks instead of being dumped inline.
 
-The pre-built Windows `.exe` is **free** on itch.io:
-👉 **https://the-awen-grid-game-dev.itch.io/unified-resonance-agi-os-q-v725-the-sovereign-operators-workbench**
-
-This repository is the **source code** — for developers who want to build,
-modify, fork, port to Linux/Mac, or audit the implementation.
-
-🦁 *Y Llew sy'n Gwylio.* The Lion watches the Lion.
+Requires **Node.js 18+** to build from source. Tested on Windows 11 with an
+RTX 4070-class GPU.
 
 ---
 
